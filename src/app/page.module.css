@@ -1,0 +1,16 @@
+
+.title{
+    font-family: 'Start2P';
+    color: #41DDA5;
+    text-transform: uppercase;
+}
+  
+/* - - - - - FONTS - - - - - */
+@font-face {
+    font-family: 'Commissioner';
+    src: url(/fonts/Commissioner-Regular.ttf);
+}
+@font-face {
+    font-family: 'Start2P';
+    src: url(/fonts/PressStart2P-Regular.ttf);
+}
