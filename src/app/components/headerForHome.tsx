@@ -5,8 +5,8 @@ import { TransitionLink } from '../animation/pageTransition'
 export default function HomeHeader () {
 
     const buttons = [
-        { id: '1', name: 'Home', destination: '' },
-        { id: '2', name: 'About Me', destination: '/about' },
+        { id: '1', name: 'Home', destination: '/' },
+        { id: '2', name: 'About', destination: '/about' },
         { id: '3', name: 'Projects', destination: '' },
         { id: '4', name: 'Contacts', destination: '' },
     ]
