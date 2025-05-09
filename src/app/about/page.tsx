@@ -1,13 +1,17 @@
-import React from "react"
-import { Box } from "@mui/material"
+'use client'
+
+import { useRef } from "react"
+import styles from '../page.module.css'
+import { Box, Typography, Grid } from "@mui/material"
+import { motion, useTransform, useScroll } from "framer-motion"
 import Image from "next/image"
+
 import Header from '../components/headers'
 import cover from '../assets/aboutCover.svg'
-import styles from '../page.module.css'
+import ScrollPar from '../components/parallax'
+import AlbumScroll from '../components/albums'
 
 export default function About () {
-
-    // const 
 
     return(
         <Box>
@@ -28,12 +32,65 @@ export default function About () {
                 <Box
                     sx={{ 
                         position: 'absolute', 
-                        left: '50%',
-                        transform: 'translateX(-50%)',
+                        width: '100%', 
+                        height: '100vh',
+                        display: 'flex', 
+                        justifyContent: 'center', 
+                        alignItems: 'center'
                     }}
                 >
-                    <p className={styles.title}> SCROLL DOWN </p>
+                    <Typography
+                        variant='h3'
+                        className={styles.title}
+                    >
+                        SCROLL DOWN
+                    </Typography>
                 </Box>
+            </Box>
+
+            <Box
+                sx={{
+                    display: 'flex', 
+                    justifyContent: 'center',
+                    minHeight: '300vh', 
+                }}
+            >
+                <Box
+                    pt={10}
+                    sx={{
+                        width: { xs: '80%', md: '60%' },
+                    }}
+                >
+                    <ScrollPar />
+                </Box>
+            </Box>
+
+            <AlbumScroll />
+
+            <Box
+                py={10}
+                sx={{
+                    width: { xs: '80%', md: '50%' }, 
+                    display: 'flex',
+                    margin: '0 auto', 
+                }}
+            >
+                <Grid container spacing={2}>
+                    <Grid sx={{ height: '100%', boxSizing: 'border-box' }}>
+                        <Typography
+                            variant="h4"
+                            sx={{ mb: 2, color: '#00ffcc' }}
+                            className={styles.title}
+                        >
+                            Add Me
+                        </Typography>
+                    </Grid>
+
+                    <Grid>
+                        <Typography>.sucrei</Typography>
+                        <Typography>1192207773</Typography>
+                    </Grid>
+                </Grid>
             </Box>
         </Box>
     )

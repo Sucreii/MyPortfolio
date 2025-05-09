@@ -25,7 +25,7 @@ export default function Header () {
                 sx={{ 
                     width: '50%', 
                     top: 0, 
-                    position: 'sticky', 
+                    position: 'fixed', 
                     zIndex: '999', 
                     background: 'rgba(204, 204, 204, 0.3)', 
                     borderRadius: '10px', 

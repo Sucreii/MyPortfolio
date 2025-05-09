@@ -1,5 +1,5 @@
 @import "tailwindcss";
-@tailwind utilities;
+/* @tailwind utilities; */
 
 /* :root {
   --background: #ffffff;
@@ -24,7 +24,7 @@ body {
   background: #000000;
   color: #717171;
   font-family: 'Commissioner';
-  transition-property: opacity, transform, filter, background;
+  transition-property: opacity, transform, filter;
   transition-timing-function: ease-in-out;
   transition-duration: 500ms;
 }
@@ -36,6 +36,12 @@ body {
   filter: blur(12px);
 }
 
+.title{
+  font-family: 'Start2P';
+  color: #41DDA5;
+  text-transform: uppercase;
+  text-shadow: '3px 4px 3px rgba(0, 0, 0, 0.3)';
+}
 
 /* - - - - - FONTS - - - - - */
 @font-face {
